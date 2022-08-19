@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+//      Variables
+
+$main_color: #000000;
+$white_color: #ffffff;
+
+//      Elements styling
+
+body
+{
+    background-color: $main_color;
+    color: $white_color;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+
+    &::-webkit-scrollbar
+    {
+        width: 5px;
+        background: $white_color;
+    }
+
+    &::-webkit-scrollbar-track 
+    {
+        background: $main_color;
+    }
+
+    &::-webkit-scrollbar-thumb 
+    {
+        background: $white_color;
+        opacity: .8;
+    }
+        
+    &::-webkit-scrollbar-thumb:hover 
+    {
+        opacity: 1;
+    }
+}
+
+*, *::after, *::before
+{
+    box-sizing: border-box;
+}
+
+*::selection
+{
+    color: $main_color;
+    background-color: $white_color;
+}
+
+i
+{
+    vertical-align: middle;
+}
+
+td
+{
+    padding: 15px;
+}
+
+.table-row
+{
+    border-bottom: 1px solid;
+}
+
+
+.break-line
+{
+    width: 80%;
+    border-bottom: 1px solid $white_color;
+}
+
+.link
+{
+    color: $white_color;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 100;
+    opacity: 0.7;
+    cursor: pointer;
+    margin: 0 5px;
+
+    &_text
+    {
+        opacity: 1;
+        border-bottom: 1px solid $white_color;
+    }
+
+    &:hover
+    {
+        opacity: 1;
+    }
+}
+
+.logo
+{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+//      Header styling
+
+.main-header
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+    &__inner
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &__links
+    {
+        max-width: 568px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__link
+    {
+        padding: 15px;
+
+        &_active
+        {
+            opacity: 1;
+            border-bottom: $white_color 1px solid;
+        }
+
+        &_support 
+        {
+            &_desktop
+            {
+                border: $white_color 1px solid;
+                display: block;
+            }
+
+            &_mobile
+            {
+                border: $white_color 1px solid;
+                padding: 6px 10px;
+                display: none;
+            }
+        }
+    }
+
+    &__logo
+    {
+        color: #ffffff;
+        opacity: 1;
+    }
+
+
+}
+
+//      Main page styling
+
+.main-page
+{
+    .banner
+    {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .break-line
+        {
+            width: 80%;
+            border-bottom: 1px solid $white_color;
+        }
+
+        &__title
+        {
+            font-size: 5rem;
+            letter-spacing: 20px;
+            text-align: center;
+            word-spacing: 40px;
+        }
+    }
+
+    .cards-wrapper
+    {
+        margin: 50px;
+    }
+
+    .card
+    {
+        max-width: 300px;
+        height: 450px;
+        border: 1px solid $white_color;
+        background-color: $main_color;
+        margin: 20px auto;
+
+        &__img-wrapper
+        {
+            height: 50%;
+            border-bottom: 1px solid $white_color;
+            img
+            {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        &__content-wrapper
+        {
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            height: 50%;
+            &::-webkit-scrollbar
+            {
+                display: none;
+            }
+        }
+
+        &__section
+        {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            
+            a
+            {
+                font-size: 1.4rem;
+            }
+
+            &_name
+            {
+                margin-top: 0;
+                align-items: center;
+                padding-bottom: 10px;
+                border-bottom: 1px solid $white_color;
+                a
+                {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// Footer styling
+
+.footer
+{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__link
+    {
+        font-size: 1.3rem;
+        margin: 0 10px;
+
+        &_createBy
+        {   
+            font-size: 1.3rem;
+            margin: 0px 10px;
+            border-bottom: 1px solid $white_color;
+        }
+    }
+    
+    &__content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    &__api-links, &__contacts, &__createBy
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+
+}
+
+//      AboutPage styling
+
+.main-title
+{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-align: center;
+    word-spacing: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-page, .support-page, .docs-wrapper
+{
+    .main-content
+    {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        article
+        {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .secondary-title
+    {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        font-weight: 600;
+    }
+
+    .text
+    {
+        font-size: 1.3rem;
+    }
+
+    .support-link
+    {
+        margin: auto;
+        max-width: 300px;
+        img
+        {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+}
+
+//      Documentation page styling
+
+
+.content-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 200px;
+
+    .sidebar-wrapper
+    {
+        min-width: 250px;
+        width: 10%;
+        position: sticky;
+        border-right: 1px solid $white_color;
+        min-height: 50vh;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar
+        {
+            display: none;
+        }
+
+        .sidebar
+        {
+            li
+            {
+                padding: 5px 0;
+            }
+
+            padding: 20px;
+            .section
+            {
+                margin-bottom: 20px;
+
+                &__link
+                {
+                    font-size: 1.3rem;
+                    margin: 10px 0;
+                    color: $white_color;
+                    opacity: .8;
+                    transition: all 0.3s ease;
+
+                    &:hover
+                    {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+
+                    &_main
+                    {
+                        font-size: 2rem;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .docs-wrapper
+    {
+        min-height: 50vh;
+        max-height: 90vh;
+        overflow-y: scroll;
+        overflow-x: auto;
+        margin: 0 auto;
+
+
+        &::-webkit-scrollbar
+        {
+            width: 5px;
+            background: $white_color;
+        }
+
+        &::-webkit-scrollbar-track 
+        {
+            background: $main_color;
+        }
+
+        &::-webkit-scrollbar-thumb 
+        {
+            background: $white_color;
+            opacity: .8;
+        }
+        
+    &::-webkit-scrollbar-thumb:hover 
+    {
+        opacity: 1;
+    }
+
+        article
+        {
+            width: 90%;
+            margin: 0 auto 50px;
+        }
+    }
+}
+
+
+//      Code elements styling
+
+.code-block
+{
+    margin-top: 50px;
+
+    .query-wrapper, .code-wrapper
+    {
+        min-width: 300px;
+        border: 1px solid $white_color;
+        padding: 2rem;
+        margin: 0;
+        overflow-x: auto;
+    }
+    
+    .code-wrapper
+    {
+        border-top: none;
+        font-size: 1.3rem;
+    }
+
+    .request
+    {
+        font-size: 1.5rem;
+        margin: 0 20px;
+    }
+
+    .endpoint, .base-url
+    {
+        font-size: 1.3rem;
+    }
+
+    .base-url
+    {
+        opacity: 0.8;
+    }
+}
+
+.code_text
+{
+    padding: 2px 5px;
+    color: $main_color;
+    background-color: $white_color;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+
+//Small screen 
+@media (max-width: 600px) {
+
+    //Header media for small screen
+    .main-header
+    {
+        &__link
+        {
+            &_support
+            {
+                &_desktop
+                {
+                    display: none;
+                }
+
+                &_mobile
+                {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .main-title
+    {
+        font-size: 2rem;
+    }
+
+
+    //
+}
+
+@media (max-width: 992px) {
+    .sidebar-wrapper
+    {
+        display: none;
+    }
+}
