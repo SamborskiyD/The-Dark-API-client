@@ -13,7 +13,7 @@ const Footer = () => {
                    <a href="/api/episode" className="footer__link link" target={"_blank"}>Episods: 26</a>
                 </div>
                 <div className="footer__contacts">
-                    <Link to="#" className="footer__link link">GitHub</Link>
+                    <a href="https://github.com/SamborskiyD/The-Dark-API" target={'_blank'} className="footer__link link">GitHub</a>
                     <Link to="/support" className="footer__link link"><i className="material-icons">favorite</i></Link>
                 </div>
                 <div className="footer__createBy">

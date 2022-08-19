@@ -74,7 +74,7 @@ const AboutPage = (props) => {
                     <div className="text">
                         <p>
                             You can <a className="link link_text" href="/support">support us</a> and you can also contribute 
-                            on <a className="link link_text" href="#">GitHub</a>.
+                            on <a className="link link_text" target={"_blank"} href="https://github.com/SamborskiyD/The-Dark-API">GitHub</a>.
                         </p>
                     </div>
                 </article>
