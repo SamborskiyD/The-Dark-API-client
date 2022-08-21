@@ -60,7 +60,7 @@ const DocumentationPage = (props) => {
                         </p>
                         <p id="rest" className="secondary-title">REST</p>
                         <p className="text">
-                            <strong>Base url:</strong><a className="link link_text" href="https://the-dark-api.herokuapp.com/api" target={"_blank"}>http://localhost:3000/api</a>
+                            <strong>Base url:</strong><a className="link link_text" href="https://the-dark-api-client.herokuapp.com/api" target={"_blank"}>http://localhost:3000/api</a>
                         </p>
                         <p className="text">
                             The base url contains information about all available API's resources. 
