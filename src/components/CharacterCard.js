@@ -4,7 +4,7 @@ import axios from "axios";
 const CharacterCard = (props) => {
  
     const id = props.id;
-    const url = process.env.BASE_URL + `api/character/${id}`;
+    const url = process.env.BASE_URL + `/api/character/${id}`;
     const [character, setCharacter] = useState();
 
     useEffect(() => {
