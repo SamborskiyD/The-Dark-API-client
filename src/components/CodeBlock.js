@@ -5,7 +5,7 @@ import axios from "axios";
 
 const CodeBlock = (props) => {
 
-    const base_url = "/api";
+    const base_url = "https://the-dark-api-client.herokuapp.com/api";
     const endpoint = props.endpoint;
     const [data, setData] = useState();
     const url = base_url + endpoint;
