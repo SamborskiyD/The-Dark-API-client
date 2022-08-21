@@ -5,7 +5,7 @@ import axios from "axios";
 
 const CodeBlock = (props) => {
 
-    const base_url = "http://localhost:3000/api"
+    const base_url = process.env.BASE_URL + "api";
     const endpoint = props.endpoint;
     const [data, setData] = useState();
     const url = base_url + endpoint;
